@@ -23,7 +23,7 @@ $prodottoCibo = new Cibo(
 
 echo "<br>";
 $prodottoGiochi = new Product(
-    "Immagine gioco",
+    "https://arcaplanet.vtexassets.com/arquivos/ids/223864-1800-1800/trixie-cane-gioco-corda.jpg",
     "Corda",
     "Corda per cani a forma di osso",
     10,

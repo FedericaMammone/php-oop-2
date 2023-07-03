@@ -31,6 +31,21 @@
 
 </div>
 
+<div class="card">
+  <img src="<?php echo $prodottoGiochi->getImmagine(); ?>" alt="">
+
+  <h3><?php echo $prodottoGiochi->getTitolo(); ?></h3>
+
+  <p><?php echo $prodottoGiochi->getDescrizione(); ?></p>
+
+  <p>Prezzo: <?php echo $prodottoGiochi->getPrezzo(); ?> €</p>
+
+  <p>Marca: <?php echo $prodottoGiochi->getMateriale(); ?></p>
+
+  <p>Peso: <?php echo $prodottoGiochi->getColore(); ?></p>
+
+</div>
+
 
 </body>
 
