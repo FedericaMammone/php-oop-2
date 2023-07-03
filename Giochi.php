@@ -1,9 +1,9 @@
 <?php
 
-class Giochi extends Product{
+class Giochi extends Product
+{
     private $materiale;
-    private $colore
-
+    private $colore;
 
     public function __construct(
         $immagine,
@@ -25,5 +25,28 @@ class Giochi extends Product{
 
         $this->setMateriale($materiale);
         $this->setColore($colore);
+    }
+
+
+    public function getMateriale()
+    {
+
+        return $this->materiale;
+    }
+    public function setMateriale($materiale)
+    {
+
+        $this->materiale = $materiale;
+    }
+
+    public function getColore()
+    {
+
+        return $this->colore;
+    }
+    public function setColore($colore)
+    {
+
+        $this->colore = $colore;
     }
 }
