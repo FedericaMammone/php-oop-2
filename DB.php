@@ -17,7 +17,7 @@ $prodottoCibo = new Cibo(
     55,
     $categoriaGatto,
     "expecial Cat",
-    "100 gr"
+    "400 gr"
 );
 
 

@@ -9,6 +9,11 @@
     require_once("./DB.php");
     ?>
     
+    <style>
+        img{
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 <div class="card">
@@ -20,12 +25,15 @@
 
   <p>Prezzo: <?php echo $prodottoCibo->getPrezzo(); ?> €</p>
 
-  <img src="<?php echo $prodottoCibo->getCategoria()->getIcona(); ?>" alt="<?php echo $prodottoCibo->getCategoria()->getNome(); ?>">
+  <p>Marca: <?php echo $prodottoCibo->getMarca(); ?></p>
 
-  <p>Tipo: <?php echo $prodottoCibo->getMarca(); ?></p>
+  <p>Peso: <?php echo $prodottoCibo->getPeso(); ?></p>
 
 </div>
 
 
 </body>
+
+
+
 </html>
