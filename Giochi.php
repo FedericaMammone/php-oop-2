@@ -11,6 +11,7 @@ class Giochi extends Product
         $descrizione,
         $prezzo,
         Categoria $categoria,
+        $shipping,
         $materiale,
         $colore
     ) {
@@ -20,7 +21,8 @@ class Giochi extends Product
             $titolo,
             $descrizione,
             $prezzo,
-            $categoria
+            $categoria,
+            $shipping
         );
 
         $this->setMateriale($materiale);

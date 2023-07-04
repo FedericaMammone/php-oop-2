@@ -1,5 +1,25 @@
 <?php
 
+trait ShippingCost {
+
+    private $shipping;
+
+    public function getShipping() {
+
+        return $this -> shipping;
+    }
+    public function setShipping($shipping) {
+
+        if ($shipping <= 0) {
+
+            throw new Exception("Shipping can't be negative");
+        }
+
+        $this -> shipping = $shipping;
+    }
+}
+
+
 class Product
 {
     private $immagine;
@@ -9,8 +29,9 @@ class Product
 
     private Categoria $categoria;
 
+    use ShippingCost;
 
-    public function __construct($immagine, $titolo, $descrizione, $prezzo, Categoria $categoria)
+    public function __construct($immagine, $titolo, $descrizione, $prezzo, Categoria $categoria, $shipping)
     {
 
 
@@ -20,6 +41,8 @@ class Product
         $this->setDescrizione($descrizione);
         $this->setPrezzo($prezzo);
         $this->setCategoria($categoria);
+        $this->setShipping($shipping);
+
     }
 
 

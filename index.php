@@ -29,6 +29,8 @@
 
   <p>Peso: <?php echo $prodottoCibo->getPeso(); ?></p>
 
+  <h2> Spese di spedizione: <?php echo $prodottoCibo->getShipping();?> euro</h2>
+
 </div>
 
 <div class="card">
@@ -43,6 +45,8 @@
   <p>Marca: <?php echo $prodottoGiochi->getMateriale(); ?></p>
 
   <p>Peso: <?php echo $prodottoGiochi->getColore(); ?></p>
+
+  <h2> Spese di spedizione: <?php echo $prodottoGiochi->getShipping();?> euro</h2>
 
 </div>
 

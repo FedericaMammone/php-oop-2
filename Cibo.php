@@ -3,12 +3,14 @@ class Cibo extends Product
 {
     private $marca;
     private $peso;
+
     public function __construct(
         $immagine,
         $titolo,
         $descrizione,
         $prezzo,
         Categoria $categoria,
+        $shipping,
         $marca,
         $peso
     ) {
@@ -17,10 +19,12 @@ class Cibo extends Product
             $titolo,
             $descrizione,
             $prezzo,
-            $categoria
+            $categoria,
+            $shipping
         );
         $this->setMarca($marca);
         $this->setPeso($peso);
+
     }
     public function getMarca()
     {
